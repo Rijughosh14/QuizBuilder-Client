@@ -73,10 +73,10 @@ const Form = () => {
         console.log({
                 FormId:id,FormTitle:FormData?.FormTitle,UserName,Categorize:CategorizeAns,Cloze:ClozeAns,Comprehension:ComprehensionAns
             })
-        // const response=await axios.post('/submitanswer',{
-        //     FormId:id,FormTitle:FormData?.FormTitle,UserName,Categorize:CategorizeAns,Cloze:ClozeAns,Comprehension:ComprehensionAns
-        // })
-        // navigate('/')
+        const response=await axios.post('/submitanswer',{
+            FormId:id,FormTitle:FormData?.FormTitle,UserName,Categorize:CategorizeAns,Cloze:ClozeAns,Comprehension:ComprehensionAns
+        })
+        navigate('/')
     }
 
 
