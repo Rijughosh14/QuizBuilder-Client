@@ -160,7 +160,7 @@ export const Cloze = ({ AddCloze, SetCloze, DeleteCloze, index, data }) => {
               // dangerouslySetInnerHTML={{ __html:Sentence}}
               >
               </div>
-              {selectedWord && <i className="fas fa-underline hover:cursor-pointer" onClick={HandleUnderline}></i>}
+               <i className="fas fa-underline hover:cursor-pointer" onClick={HandleUnderline}></i>
             </div>
             <div className="flex flex-col gap-3">
               {Options.map((data, index) => {
